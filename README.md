@@ -49,4 +49,6 @@ You should see something like:
 Rolld also supports multiple rolls, eg: `/roll 3d8`
 ![Rolld](https://i.imgur.com/BWU5zQe.png)
 
+The gif isn't dynamic and is just for show at the moment. 
+
 I've probably missed a step or two. If you see something, feel free to file a PR and I'll update. Thanks!
