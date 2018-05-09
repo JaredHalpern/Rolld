@@ -43,4 +43,7 @@ You should see something like:
 26. Push to the Heroku remote: `git push heroku master`
 27. Open Slack, and run your command! `/roll 1d20`
 
+It should look like this:
+![Rolld](https://i.imgur.com/3x8CVAx.png)
+
 I've probably missed a step or two. If you see something, feel free to file a PR and I'll update. Thanks!
