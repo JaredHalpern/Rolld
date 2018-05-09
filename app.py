@@ -24,6 +24,7 @@ def test():
 
 	if not matches:
 		return jsonify({
+				'response_type': 'in_channel',
 				'text': 'Rolld Result: ' + 'Invalid dice',
 				'attachments': [
 								{
@@ -47,6 +48,7 @@ def test():
 		'text': 'Rolld Result: ' + str(results),
 		'attachments': [
 			            {
+			            'response_type': 'in_channel',
 			            'color': '#C70005',
                 		'author_name': 'Rolld!',
                 		'image_url': 'https://i.imgur.com/LPPo1BS.gif',
