@@ -43,7 +43,10 @@ You should see something like:
 26. Push to the Heroku remote: `git push heroku master`
 27. Open Slack, and run your command! `/roll 1d20`
 
-It should look like this:
+### Usage
 ![Rolld](https://i.imgur.com/3x8CVAx.png)
+
+Rolld also supports multiple rolls, eg: `/roll 3d6`
+![Rolld](https://i.imgur.com/BWU5zQe.png)
 
 I've probably missed a step or two. If you see something, feel free to file a PR and I'll update. Thanks!
