@@ -1,5 +1,5 @@
 import os
-import re #regex
+import re
 import random
 from slackclient import SlackClient
 from flask import abort, Flask, jsonify, request
@@ -18,6 +18,7 @@ def test():
 	parameter_text = request.form.get('text', None)
 	
 	# https://regex101.com/r/K6q4PR/1/
+	# not perfect - will allow for 1d66, 2d44, etc
 	DICE_REGEX = "([1-99])d([4,6,8,10,12,20]{1,2})"
 
 	matches = re.search(DICE_REGEX, parameter_text)
@@ -27,12 +28,12 @@ def test():
 				'response_type': 'in_channel',
 				'text': 'Rolld Result: ' + 'Invalid dice',
 				'attachments': [
-								{
-								'color': '#C70005',
-								'author_name': 'Rolld!',
-								'image_url': 'https://i.imgur.com/aSRSGkG.gif',
-								}
-								]
+							{
+							'color': '#C70005',
+							'author_name': 'Rolld!',
+							'image_url': 'https://i.imgur.com/aSRSGkG.gif',
+							}
+							]
 				})
 
 	results = []
