@@ -33,11 +33,8 @@ You should see something like:
 20. Scroll down a bit further on the Basic Information page and copy the `Verification Token`. Put it somewhere safe and temporary.
 21. Next click on OAuth & Permissions on the left-hand side. Copy the OAuth token and put it somewhere safe and temporary.
 22. This next part is a bit odd - we need to get the Team-ID. The best way to do that (that I've found) is to navigate to your team's Slack channel in a web browser, then right-click and inspect the source. Find the text, `team_id` and grab the value next to it. It'll be something like `Z4KRT3F6A`.
-23. We need to set the environmental variables. Best practices say that it's a terrible idea to ever store things like tokens in source-control. We can do this via the Heroku command line, but I'll show you how to do it in the Heroku CLI. Go to `https://dashboard.heroku.com/apps/<your app name>/settings` and tap the `Reveal Config Vars` button. Enter the following Key-Value pairs:
-
-	`SLACK_VERIFICATION_TOKEN | value from step 21`, `SLACK_ROLLD_TOKEN | value from Step 22`, `SLACK_TEAM_ID     | value from step 23`
-
-23a. Alternative, Heroku [CLI](https://devcenter.heroku.com/articles/config-vars) syntax for setting config variables: `heroku config:set SLACK_VERIFICATION_TOKEN=....your token....`
+23. We need to set the environmental variables. Best practices say that it's a terrible idea to ever store things like tokens in source-control. We can do this via the Heroku command line, but I'll show you how to do it in the Heroku CLI. Go to `https://dashboard.heroku.com/apps/<your app name>/settings` and tap the `Reveal Config Vars` button. Enter the following Key-Value pairs: `SLACK_VERIFICATION_TOKEN | value from step 21`, `SLACK_ROLLD_TOKEN | value from Step 22`, `SLACK_TEAM_ID     | value from step 23`
+23a. Alternatively, the Heroku [CLI](https://devcenter.heroku.com/articles/config-vars) syntax for setting config variables: `heroku config:set SLACK_VERIFICATION_TOKEN=....your token....`
 24. Push to the Heroku remote: `git push heroku master`
 25. Open Slack, and run your command! `/roll 1d20`
 
