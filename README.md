@@ -19,9 +19,8 @@ Steps to set up this integration for your local Slack channel, using a free dyno
 You should see something like: 
   `heroku  https://git.heroku.com/yass-rangers-61413.git (fetch)`
   `heroku  https://git.heroku.com/yass-rangers-61413.git (push)`
-10. Go to Heroku Settings: `https://dashboard.heroku.com/apps/<your app name>/settings` and find the Domain. It should say something like
-> Your app can be found at https://yass-rangers-61413.herokuapp.com/
-Note down this url for the next step.
+10. Go to Heroku Settings: `https://dashboard.heroku.com/apps/<your app name>/settings` and find the Domain. 
+  It should say something like: `Your app can be found at https://yass-rangers-61413.herokuapp.com/`. Note down this url for the next step.
 11. Log into to your Slack account via the web: [https://api.slack.com/apps](https://api.slack.com/apps)
 12. Hit the Create New App button
 13. Name the app and choose a workspace in which to deploy it.
