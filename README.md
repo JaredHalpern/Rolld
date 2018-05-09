@@ -16,9 +16,9 @@ Steps to set up this integration for your local Slack channel, using a free dyno
 7. Change to the cloned Rolld directory: `cd Rolld`
 8. Create a heroku app: `heroku create`. We'll configure Slack to point to this URL soon. This command also creates a remote pointing to Heroku.
 9. Verify the remote is set up, `git remote -v`.
-You should see something like:
-```heroku  https://git.heroku.com/yass-rangers-61413.git (fetch)
-heroku  https://git.heroku.com/yass-rangers-61413.git (push)```
+You should see something like: 
+  `heroku  https://git.heroku.com/yass-rangers-61413.git (fetch)`
+  `heroku  https://git.heroku.com/yass-rangers-61413.git (push)`
 10. Go to Heroku Settings: `https://dashboard.heroku.com/apps/<your app name>/settings` and find the Domain. It should say something like
 > Your app can be found at https://yass-rangers-61413.herokuapp.com/
 Note down this url for the next step.
@@ -43,3 +43,5 @@ SLACK_TEAM_ID     | value from step 23
 23a. Alternative, Heroku [CLI](https://devcenter.heroku.com/articles/config-vars) syntax for setting config variables: `heroku config:set SLACK_VERIFICATION_TOKEN=....your token....`
 24. Push to the Heroku remote: `git push heroku master`
 25. Open Slack, and run your command! `/roll 1d20`
+
+I've probably missed a step or two. If you see something, feel free to file a PR and I'll update. Thanks!
