@@ -46,9 +46,9 @@ def test():
 
 	return jsonify({
 		'text': 'Rolld Result: ' + str(results),
+		'response_type': 'in_channel',
 		'attachments': [
 			            {
-			            'response_type': 'in_channel',
 			            'color': '#C70005',
                 		'author_name': 'Rolld!',
                 		'image_url': 'https://i.imgur.com/LPPo1BS.gif',
