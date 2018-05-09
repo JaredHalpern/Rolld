@@ -25,8 +25,7 @@ def test():
 
 	if not matches:
 		return jsonify({
-				'response_type': 'in_channel',
-				'text': 'Rolld Result: ' + 'Invalid dice',
+				'text': 'Rolld Result: ' + 'INVALID DICE - Try again!',
 				'attachments': [
 							{
 							'color': '#C70005',
