@@ -3,6 +3,10 @@ RPG-dice Slack integration
 
 Rolld is a Slack Integration that makes it easy to roll dice in a Slack Channel. That's really all there is to it. I put this thing together in a few hours downtime. I don't plan to distribute it because I don't want all the dozens (there are dozens of us!) of gamers banging on my free-tier Heroku dyno.
 
+
+![Rolld](https://i.imgur.com/LPPo1BS.gif)
+
+
 Steps to set up this integration for your local Slack channel, using a free dyno on Heroku to host:
 
 1. Clone the repo `git clone git@github.com:JaredHalpern/Rolld.git`
