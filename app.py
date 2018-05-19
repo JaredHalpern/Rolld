@@ -19,7 +19,7 @@ def test():
 	
 	# https://regex101.com/r/K6q4PR/1/
 	# not perfect - will allow for 1d66, 2d44, etc
-	DICE_REGEX = "([1-99])d([4,6,8,10,12,20]{1,2})"
+	DICE_REGEX = "([\d]+)d(4|6|8|10|12|20)+(\+\d)*"
 
 	matches = re.search(DICE_REGEX, parameter_text)
 
