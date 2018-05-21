@@ -39,13 +39,16 @@ def test():
 	
 	numberOfRolls = int(matches.group(1))
 	dieToUse = int(matches.group(2))
+	modifier = int(matches.group(3))
 
 	for x in range(numberOfRolls):
 		randNum = random.randint(1,dieToUse)
 		results.append(randNum)
+	
+	total = sum(results) 
 
 	return jsonify({
-		'text': 'Rolld Result: ' + str(results),
+		'text': 'Rolld Result: ' + str(total+modifier) + '. Breakdown ' + str(results),
 		'response_type': 'in_channel',
 		# 'attachments': [
 		# 	            {
