@@ -50,7 +50,7 @@ def test():
 	total = sum(results) 
 
 	return jsonify({
-		'text': 'Rolld Result: ' + str(total+modifier) + '. Breakdown ' + str(results),
+		'text': 'Rolld Result: ' + str(total+modifier) + '. Breakdown ' + str(results) +' +' + str(modifier),
 		'response_type': 'in_channel',
 		# 'attachments': [
 		# 	            {
