@@ -44,10 +44,13 @@ You should see something like:
 27. Open Slack, and run your command! `/roll 1d20`
 
 ### Usage
+
 Roll + modifiers
+
 ![Rolld](https://i.imgur.com/aL5LdwM.png)
 
 Rolld also supports multiple rolls, eg: `/roll 2d6`
+
 ![Rolld](https://i.imgur.com/wWfiY08.png)
 
 I've probably missed a step or two. If you see something, feel free to file a PR and I'll update. Thanks!
