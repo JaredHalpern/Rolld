@@ -7,6 +7,18 @@ Rolld is a Slack Integration that makes it easy to roll dice in a Slack Channel.
 ![Rolld](https://i.imgur.com/LPPo1BS.gif)
 
 
+### Usage
+
+Roll + modifiers (thanks [jisaf!](https://github.com/jisaf))
+
+![Rolld](https://i.imgur.com/aL5LdwM.png)
+
+Rolld also supports multiple rolls, eg: `/roll 2d6`
+
+![Rolld](https://i.imgur.com/wWfiY08.png)
+
+### Steps
+
 Steps to set up this integration for your local Slack channel, using a free dyno on Heroku to host:
 
 1. Clone the repo `git clone git@github.com:JaredHalpern/Rolld.git`
@@ -42,15 +54,5 @@ You should see something like:
 25. Alternatively, the Heroku [CLI](https://devcenter.heroku.com/articles/config-vars) syntax for setting config variables: `heroku config:set SLACK_VERIFICATION_TOKEN=....your token....`
 26. Push to the Heroku remote: `git push heroku master`
 27. Open Slack, and run your command! `/roll 1d20`
-
-### Usage
-
-Roll + modifiers (thanks [jisaf!](https://github.com/jisaf))
-
-![Rolld](https://i.imgur.com/aL5LdwM.png)
-
-Rolld also supports multiple rolls, eg: `/roll 2d6`
-
-![Rolld](https://i.imgur.com/wWfiY08.png)
 
 I've probably missed a step or two. If you see something, feel free to file a PR and I'll update. Thanks!
