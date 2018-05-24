@@ -39,7 +39,8 @@ def test():
 	
 	numberOfRolls = int(matches.group(1))
 	dieToUse = int(matches.group(2))
-	modifier = int(matches.group(3))
+	if matches.group(3):
+		modifier = int(matches.group(3))
 
 	for x in range(numberOfRolls):
 		randNum = random.randint(1,dieToUse)
