@@ -45,7 +45,7 @@ You should see something like:
 
 ### Usage
 
-Roll + modifiers
+Roll + modifiers (thanks [jisaf!](https://github.com/jisaf))
 
 ![Rolld](https://i.imgur.com/aL5LdwM.png)
 
