@@ -36,6 +36,7 @@ def test():
 				})
 
 	results = []
+	modifier = 0
 	
 	numberOfRolls = int(matches.group(1))
 	dieToUse = int(matches.group(2))
