@@ -47,23 +47,31 @@ def test():
 		randNum = random.randint(1,dieToUse)
 		results.append(randNum)
 	
-	total = sum(results) 
-
-	return jsonify({
-		'text': 'Rolld Result: ' + str(total+modifier) + '. Breakdown ' + str(results) +' +' + str(modifier),
-		'response_type': 'in_channel',
-		# 'attachments': [
-		# 	            {
-		# 	            'color': '#C70005',
-  #               		'author_name': 'Rolld!',
-  #               		'image_url': 'https://i.imgur.com/LPPo1BS.gif',
-		# 	            }
-		# 	            ]
-		})	
+	total = sum(results)
+	
+	if (total > 1):
+		return jsonify({
+			'text': 'Rolld Result: ' + str(total+modifier) + '. Breakdown ' + str(results) +' +' + str(modifier),
+			'response_type': 'in_channel'
+			})	
+	else:
+				return jsonify({
+			'text': 'Rolld Result: (beta) ' + str(total+modifier) + '. Breakdown ' + str(results) +' +' + str(modifier),
+			'response_type': 'in_channel',
+			'attachments': [
+				            {
+				            'color': '#C70005',
+	                		'author_name': 'Rolld!',
+	                		'image_url': 'https://i.imgur.com/VCoWeaG.gif',
+				            }
+				            ]
+			})	
 
 def is_request_valid(request):
 	is_token_valid = request.form['token'] == os.environ['SLACK_VERIFICATION_TOKEN']
 	is_team_id_valid = request.form['team_id'] == os.environ['SLACK_TEAM_ID']
+	# print(os.environ['SLACK_VERIFICATION_TOKEN'])
+	# print(os.environ['SLACK_TEAM_ID'])
 
 	return is_token_valid and is_team_id_valid
 
