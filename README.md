@@ -1,7 +1,7 @@
 # Rolld
-RPG-dice Slack integration
+RPG-dice Slack integration (<a href="https://github.com/JaredHalpern/Rolld"source</a>)
 
-Rolld is a Slack Integration that makes it easy to roll dice in a Slack Channel. That's really all there is to it. I put this thing together in a few hours downtime. I don't plan to distribute it because I don't want all the dozens (there are dozens of us!) of Slack gamers banging on my free-tier Heroku dyno.
+Rolld is a Slack Integration that makes it easy to roll dice in a Slack Channel. That's really all there is to it. I put this thing together in a few hours downtime when I needed to take a break from writing the <a href="https://amzn.to/2J2ItUa"book</a>. I don't plan to distribute it via Slack because I don't want all the dozens (there are dozens of us!) of Slack gamers banging on my free-tier Heroku dyno. But you can deploy your own Rolld app to a Heroku dyno and integrate it into a Slack channel of your choosing.
 
 
 ![Rolld](https://i.imgur.com/LPPo1BS.gif)
@@ -9,7 +9,7 @@ Rolld is a Slack Integration that makes it easy to roll dice in a Slack Channel.
 
 ### Usage
 
-Roll + modifiers (thanks [jisaf!](https://github.com/jisaf))
+Roll + modifiers
 
 ![Rolld](https://i.imgur.com/aL5LdwM.png)
 
@@ -17,7 +17,7 @@ Rolld also supports multiple rolls, eg: `/roll 2d6`
 
 ![Rolld](https://i.imgur.com/wWfiY08.png)
 
-### Steps
+### Steps to Setup your own Rolld App
 
 Steps to set up this integration for your local Slack channel, using a free dyno on Heroku to host:
 
@@ -57,5 +57,8 @@ You should see something like:
 
 I've probably missed a step or two. If you see something, feel free to file a PR and I'll update. Thanks!
 
-Useful links:
+#### Useful links
 [Testing Slack integrations locally](https://api.slack.com/tutorials/tunneling-with-ngrok), [Easily resize gifs online](https://ezgif.com/)
+
+#### Credit
+Thanks to [jisaf!](https://github.com/jisaf) for adding modifiers.
