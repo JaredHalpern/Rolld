@@ -56,3 +56,5 @@ You should see something like:
 27. Open Slack, and run your command! `/roll 1d20`
 
 I've probably missed a step or two. If you see something, feel free to file a PR and I'll update. Thanks!
+
+[Testing Slack integrations locally](https://api.slack.com/tutorials/tunneling-with-ngrok)
