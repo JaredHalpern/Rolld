@@ -56,7 +56,7 @@ def test():
 			})	
 	else:
 				return jsonify({
-			'text': 'Rolld Result: (beta) ' + str(total+modifier) + '. Breakdown ' + str(results) +' +' + str(modifier),
+			'text': 'Rolld Result: ' + str(total+modifier) + '. Breakdown ' + str(results) +' +' + str(modifier),
 			'response_type': 'in_channel',
 			'attachments': [
 				            {
@@ -70,9 +70,6 @@ def test():
 def is_request_valid(request):
 	is_token_valid = request.form['token'] == os.environ['SLACK_VERIFICATION_TOKEN']
 	is_team_id_valid = request.form['team_id'] == os.environ['SLACK_TEAM_ID']
-	# print(os.environ['SLACK_VERIFICATION_TOKEN'])
-	# print(os.environ['SLACK_TEAM_ID'])
-
 	return is_token_valid and is_team_id_valid
 
 if __name__ == "__main__":
