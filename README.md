@@ -9,7 +9,7 @@ Rolld is a Slack Integration that makes it easy to roll dice in a Slack Channel.
 
 ### Usage
 
-Roll + modifiers
+Roll + modifiers. Roll results are broken down inside the `[]` brackets and modifier is appended with a `+`.
 
 ![Rolld](https://i.imgur.com/aL5LdwM.png)
 
