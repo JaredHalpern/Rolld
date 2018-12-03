@@ -60,5 +60,5 @@ I've probably missed a step or two. If you see something, feel free to file a PR
 #### Useful links
 [Testing Slack integrations locally](https://api.slack.com/tutorials/tunneling-with-ngrok), [Easily resize gifs online](https://ezgif.com/)
 
-#### Credit
-Thanks to [jisaf!](https://github.com/jisaf) for adding modifiers.
+#### Credits
+Thanks to Justin Isaf, [jisaf](https://github.com/jisaf) for adding modifiers.
