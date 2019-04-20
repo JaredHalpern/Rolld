@@ -69,6 +69,11 @@ You should see something like:
 
 I've probably missed a step or two. If you see something, feel free to file a PR and I'll update. Thanks!
 
+#### Development and Testing
+
+* Use [ngrok](https://ngrok.com/) for testing locally. 
+* Instructions to set up ngrok specifically to test a Slack bot are [here]((https://api.slack.com/tutorials/tunneling-with-ngrok).
+
 #### Useful links
 [Testing Slack integrations locally](https://api.slack.com/tutorials/tunneling-with-ngrok), [Easily resize gifs online](https://ezgif.com/)
 
