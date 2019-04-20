@@ -69,6 +69,19 @@ You should see something like:
 
 I've probably missed a step or two. If you see something, feel free to file a PR and I'll update. Thanks!
 
+#### Development and Testing
+
+(Below is abbreviated and needs to be expanded upon and explained)
+
+* Use [ngrok](https://ngrok.com/) for testing locally via "tunneling".
+* Instructions to set up ngrok specifically to test a Slack bot are [here]((https://api.slack.com/tutorials/tunneling-with-ngrok).
+* Command: `ngrok http 5000`
+* Ensure local ENV variables are set - either in `.bashrc` or temporarily. Don't forget to reload the terminal window if needed or source the `.bashrc`.
+* Create a `virtualenv` for Rolld and run: `/Rolld/bin/activate`
+* With the activated `virtualenv`, run: `python app.py`
+* Copy the url present in the `http://701aa52c.ngrok.io` provided by `ngrok` to the field `Request URL`. This field is in: Your Apps -> (Features) Slash Commands -> (Click pencil to edit) Request URL. This will forward all calls from Slack to this URL, which happens be running locally on your machine. 
+* When done testing, don't forget to set the Request URL back to your Heroku App's URL.
+
 #### Useful links
 [Testing Slack integrations locally](https://api.slack.com/tutorials/tunneling-with-ngrok), [Easily resize gifs online](https://ezgif.com/)
 
