@@ -1,16 +1,13 @@
 import os
 import re
 import random
-from slackclient import SlackClient
 from flask import abort, Flask, jsonify, request
-
-slack_client = SlackClient(os.environ.get('SLACK_ROLLD_TOKEN'))
 
 app = Flask(__name__)
 app.config.from_object(__name__)
 
 @app.route('/', methods=['POST'])
-def test():
+def rollDice():
 	if not is_request_valid(request):
 		abort(400)
 
@@ -49,9 +46,11 @@ def test():
 	
 	total = sum(results)
 	
+	user_name = request.form.get('user_name', None)
+
 	if (total > 1):
 		return jsonify({
-			'text': 'Rolld Result: ' + str(total+modifier) + '. Breakdown ' + str(results) +' +' + str(modifier),
+			'text': ':d20: Results for ' + str(user_name) + ': *' + str(total+modifier) + '*. Breakdown ' + str(results) +' +' + str(modifier) + '',
 			'response_type': 'in_channel'
 			})	
 	else:
