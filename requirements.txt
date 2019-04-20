@@ -5,11 +5,11 @@ Flask==1.0.2
 gunicorn==19.8.1
 idna==2.6
 itsdangerous==0.24
-Jinja2==2.10
+Jinja2==2.10.1
 MarkupSafe==1.0
 requests==2.20.0
 six==1.11.0
 slackclient==1.2.1
-urllib3==1.23
+urllib3==1.24.2
 websocket-client==0.47.0
 Werkzeug==0.14.1
