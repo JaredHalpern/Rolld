@@ -74,7 +74,7 @@ I've probably missed a step or two. If you see something, feel free to file a PR
 (Below is abbreviated and needs to be expanded upon and explained)
 
 * Use [ngrok](https://ngrok.com/) for testing locally via "tunneling".
-* Instructions to set up ngrok specifically to test a Slack bot are [here]((https://api.slack.com/tutorials/tunneling-with-ngrok).
+* Instructions to set up ngrok specifically to test a Slack bot are [here](https://api.slack.com/tutorials/tunneling-with-ngrok).
 * Command: `ngrok http 5000`
 * Ensure local ENV variables are set - either in `.bashrc` or temporarily. Don't forget to reload the terminal window if needed or source the `.bashrc`.
 * Create a `virtualenv` for Rolld and run: `/Rolld/bin/activate`
